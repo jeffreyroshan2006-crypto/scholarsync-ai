@@ -106,7 +106,7 @@ export default function Home() {
     });
 
     if (!error) {
-      setSavedPaperIds(prev => new Set([...prev, paper.id]));
+      setSavedPaperIds(prev => new Set(Array.from(prev).concat(paper.id)));
     }
   };
 
