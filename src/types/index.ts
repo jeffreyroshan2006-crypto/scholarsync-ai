@@ -35,8 +35,8 @@ export interface SavedPaper {
   url: string;
   source: string;
   saved_at: string;
-  notes?: string;
-  tags?: string[];
+  notes?: string | null;
+  tags?: string[] | null;
 }
 
 export interface SearchFilters {
